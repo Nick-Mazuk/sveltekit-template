@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        %svelte.head%
+    </head>
+    <body class="bg-white text-gray-900">
+        <div id="svelte">%svelte.body%</div>
+    </body>
+
+    <script>
+        const darkModeListener = window.matchMedia('(prefers-color-scheme: dark)')
+
+        const toggleDarkModeClass = (isDark) => {
+            const classList = document.querySelector('html').classList
+            if (isDark) classList.add('dark')
+            else classList.remove('dark')
+        }
+
+        const toggleDarkMode = (event) => {
+            const classList = document.querySelector('html').classList
+            if (localStorage.theme === 'dark') return toggleDarkModeClass(true)
+            if ('theme' in localStorage) return toggleDarkModeClass(false)
+
+            if (event.matches) return toggleDarkModeClass(true)
+            return toggleDarkModeClass(false)
+        }
+
+        darkModeListener.addEventListener('change', toggleDarkMode)
+        toggleDarkMode(darkModeListener)
+    </script>
+</html>
