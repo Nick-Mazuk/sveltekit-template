@@ -723,8 +723,6 @@ packages:
       '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
       '@tailwindcss/line-clamp': 0.2.0
       '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.4
-      dompurify: 2.2.7
-      isomorphic-dompurify: 0.12.0
       marked: 2.0.1
       tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
     dev: false
@@ -903,12 +901,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Vs0hm0vPahPMYi9tDjtP66llufgO3ST16WXaSTtDGEl9cewAl3AibmxWw6TINOqHPT9z0uABKAYjT9jNSg4npw==
-  /@types/dompurify/2.2.1:
-    dependencies:
-      '@types/trusted-types': 2.0.0
-    dev: false
-    resolution:
-      integrity: sha512-3JwbEeRVQ3n6+JgBW/hCdkydRk9/vWT+UEglcXEJqLJEcUganDH37zlfLznxPKTZZfDqA9K229l1qN458ubcOQ==
   /@types/graceful-fs/4.1.5:
     dependencies:
       '@types/node': 14.14.35
@@ -2073,10 +2065,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
-  /dompurify/2.2.7:
-    dev: false
-    resolution:
-      integrity: sha512-jdtDffdGNY+C76jvodNTu9jt5yYj59vuTUyx+wXdzcSwAGTYZDAQkQ7Iwx9zcGrA4ixC1syU4H3RZROqRxokxg==
   /ecc-jsbn/0.1.2:
     dependencies:
       jsbn: 0.1.1
@@ -3457,14 +3445,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
-  /isomorphic-dompurify/0.12.0:
-    dependencies:
-      '@types/dompurify': 2.2.1
-      dompurify: 2.2.7
-      jsdom: 16.5.2
-    dev: false
-    resolution:
-      integrity: sha512-PLMsBwzzWuW1eVxz+cgj/2ONgI0aYka1JMwCLT92YdMujFYoIio52AZZj1+ec72GKnSl4pf/dGKdMf5Yrek/eQ==
   /isstream/0.1.2:
     dev: false
     resolution:

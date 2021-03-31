@@ -14,7 +14,7 @@
         const darkModeListener = window.matchMedia('(prefers-color-scheme: dark)')
 
         const toggleDarkModeClass = (isDark) => {
-            const classList = document.querySelector('html').classList
+            const classList = document.querySelector('body').classList
             if (isDark) classList.add('dark')
             else classList.remove('dark')
         }
@@ -28,7 +28,6 @@
             return toggleDarkModeClass(false)
         }
 
-        darkModeListener.addEventListener('change', toggleDarkMode)
         toggleDarkMode(darkModeListener)
     </script>
 </html>
