@@ -11,23 +11,17 @@
     </body>
 
     <script>
-        const darkModeListener = window.matchMedia('(prefers-color-scheme: dark)')
-
-        const toggleDarkModeClass = (isDark) => {
-            const classList = document.querySelector('body').classList
-            if (isDark) classList.add('dark')
-            else classList.remove('dark')
+        const setTheme = () => {
+            const savedTheme = localStorage.getItem('theme')
+            if (!savedTheme) localStorage.setItem('theme', 'system')
+            const { classList } = document.body
+            if (savedTheme === 'system' || !savedTheme) {
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+                if (isDark) classList.add('dark')
+            } else if (savedTheme === 'dark') {
+                classList.add('dark')
+            }
         }
-
-        const toggleDarkMode = (event) => {
-            const classList = document.querySelector('html').classList
-            if (localStorage.theme === 'dark') return toggleDarkModeClass(true)
-            if ('theme' in localStorage) return toggleDarkModeClass(false)
-
-            if (event.matches) return toggleDarkModeClass(true)
-            return toggleDarkModeClass(false)
-        }
-
-        toggleDarkMode(darkModeListener)
+        setTheme()
     </script>
 </html>

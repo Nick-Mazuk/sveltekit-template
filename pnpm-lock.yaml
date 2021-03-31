@@ -1,6 +1,6 @@
 dependencies:
   '@nick-mazuk/lib': 0.8.34
-  '@nick-mazuk/ui-svelte': 0.1.26_4ad415e86a7a96d4637d854a9dc62c9b
+  '@nick-mazuk/ui-svelte': 0.1.31_4ad415e86a7a96d4637d854a9dc62c9b
   '@sveltejs/adapter-vercel': 1.0.0-next.8
   '@tailwindcss/aspect-ratio': 0.2.0
   '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
@@ -9,10 +9,10 @@ dependencies:
   jest: 26.6.3
 devDependencies:
   '@nick-mazuk/eslint-config': 0.7.46_74ab489067ac675cb1aa4de3f89ae1e9
-  '@nick-mazuk/ui-config': 0.8.31_889aa8308374042d1eb4d3346732eda7
-  '@sveltejs/adapter-node': 1.0.0-next.10
-  '@sveltejs/kit': 1.0.0-next.64_svelte@3.35.0+vite@2.1.2
-  '@tailwindcss/jit': 0.1.8_postcss@8.2.8+tailwindcss@2.0.4
+  '@nick-mazuk/ui-config': 0.8.31_ef3666f93dae38fdaa5181904bd89550
+  '@sveltejs/adapter-node': 1.0.0-next.12
+  '@sveltejs/kit': 1.0.0-next.66_svelte@3.35.0+vite@2.1.2
+  '@tailwindcss/jit': 0.1.18_postcss@8.2.8+tailwindcss@2.0.4
   '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.4
   autoprefixer: 10.2.5_postcss@8.2.8
   eslint: 7.22.0
@@ -693,11 +693,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-LXVrklzd+TtbsmgjQx5jS0xi0U98rFnt0gOadY4Pm3OPIBMsfevkXhfDgx7UwDTgsEKqtDS6zjl3J5ZrdR/8qw==
-  /@nick-mazuk/ui-config/0.8.31_889aa8308374042d1eb4d3346732eda7:
+  /@nick-mazuk/ui-config/0.8.31_ef3666f93dae38fdaa5181904bd89550:
     dependencies:
       '@tailwindcss/aspect-ratio': 0.2.0
       '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
-      '@tailwindcss/jit': 0.1.8_postcss@8.2.8+tailwindcss@2.0.4
+      '@tailwindcss/jit': 0.1.18_postcss@8.2.8+tailwindcss@2.0.4
       '@tailwindcss/line-clamp': 0.2.0
       '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.4
       flat: 5.0.2
@@ -715,15 +715,16 @@ packages:
       tailwindcss: '>= 2.0.3'
     resolution:
       integrity: sha512-pLM1ZisOjbMctBbHrJK4VcZLNuFX4t0oU9bA99m3tzME941B4ItaAwql2LXOPvsicNVszcFkFln0JPV+0xqyMQ==
-  /@nick-mazuk/ui-svelte/0.1.26_4ad415e86a7a96d4637d854a9dc62c9b:
+  /@nick-mazuk/ui-svelte/0.1.31_4ad415e86a7a96d4637d854a9dc62c9b:
     dependencies:
       '@nick-mazuk/lib': 0.8.34
-      '@nick-mazuk/ui-config': 0.8.31_889aa8308374042d1eb4d3346732eda7
+      '@nick-mazuk/ui-config': 0.8.31_ef3666f93dae38fdaa5181904bd89550
       '@tailwindcss/aspect-ratio': 0.2.0
       '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
       '@tailwindcss/line-clamp': 0.2.0
       '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.4
       marked: 2.0.1
+      svelte-intersection-observer: 0.6.0
       tailwindcss: 2.0.4_caf414ac65a978d0d57907a0ec9fb41e
     dev: false
     peerDependencies:
@@ -735,7 +736,7 @@ packages:
       '@tailwindcss/typography': ^0.4.0
       tailwindcss: ^2.0.4
     resolution:
-      integrity: sha512-E1sj7MtuCw0SNeQ84IC9w6pAgifGKciGuYNVuHp2w4HK+Ux6kT/gF9Y/RxdZWWuyYqnFWsE+WxqYuw5XFN6JZw==
+      integrity: sha512-BUMFWciNdqgNxcqCED0BOzxUcAxUg+C+Gagye0qvUGy1hEEKipYwkp/30uWKz8qpS2hWXfp8+4hP47ysUz3WBw==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -783,15 +784,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-MZPUxrmFubI36XS1DI3qmI0YdN1gks62JtFZvxR67ljjSNCeK6U08Zx4msEWOXuofgqUt6zPHSi1H9fbjR/NRA==
-  /@sveltejs/adapter-node/1.0.0-next.10:
+  /@sveltejs/adapter-node/1.0.0-next.12:
     dev: true
     resolution:
-      integrity: sha512-v62a9nQguK53ldwBp4FizvwW1Kh2wOZBjJKGlnZFhO9e1Z/LoIqR9LH5dVHz9d5K19or5ap3hRdS91WkkDgu4w==
+      integrity: sha512-DGP3dT5ijsTV0zmLDmZP8wI4RjZlifGGzA0y4HLoWNEKhZJLDjFDJnNcA+O5S9QBxQOVaYUlAY2z19r+skBVjA==
   /@sveltejs/adapter-vercel/1.0.0-next.8:
     dev: false
     resolution:
       integrity: sha512-bclTDgJIDt17QRdq+u4CqdsQO08MXYhqdlr7O7LcCMWf8PWS5N0l9ValJbKAFcXD5xseqRF9YtUkHKAxMjS54Q==
-  /@sveltejs/kit/1.0.0-next.64_svelte@3.35.0+vite@2.1.2:
+  /@sveltejs/kit/1.0.0-next.66_svelte@3.35.0+vite@2.1.2:
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.5_svelte@3.35.0+vite@2.1.2
       cheap-watch: 1.0.3
@@ -804,7 +805,7 @@ packages:
       svelte: ^3.32.1
       vite: ^2.1.0
     resolution:
-      integrity: sha512-ccLesgGBDEkbYnz9j+xHfwkO6EF/oka9sPS+OEsveN5gmYF3o7j13Q8lZQgyXOTuUnnB+WDsklHL36ihWZzNkw==
+      integrity: sha512-IVC4Ssey7aA9ddtkyHGXucxG4TQFsYiJIXVzXXLDI4JNyjZQ0aXraFZQ/S+yOecPprHd1xulk5iZPpM9YnKzIQ==
   /@sveltejs/vite-plugin-svelte/1.0.0-next.5_svelte@3.35.0+vite@2.1.2:
     dependencies:
       '@rollup/pluginutils': 4.1.0
@@ -838,7 +839,7 @@ packages:
       tailwindcss: '>=2.0.0'
     resolution:
       integrity: sha512-aj2/rJsGb2whAZ/BQWHWWQRSbhH0r/l1ozOByiv+ZNjBD84GMvb5dhAyfpeasFky+EJrAwX5eaqft8NQMZFWvA==
-  /@tailwindcss/jit/0.1.8_postcss@8.2.8+tailwindcss@2.0.4:
+  /@tailwindcss/jit/0.1.18_postcss@8.2.8+tailwindcss@2.0.4:
     dependencies:
       chokidar: 3.5.1
       dlv: 1.1.3
@@ -846,6 +847,7 @@ packages:
       lodash.topath: 4.5.2
       normalize-path: 3.0.0
       object-hash: 2.1.1
+      parse-glob: 3.0.4
       postcss: 8.2.8
       postcss-selector-parser: 6.0.4
       quick-lru: 5.1.1
@@ -855,7 +857,7 @@ packages:
       postcss: ^8.2.6
       tailwindcss: ^2.0.3
     resolution:
-      integrity: sha512-YNzq0mUimcJldY0u2B475u7fnyOWQkWbQvHcEftkf7VqQIwQrBvSRM7Cycg0MAU42IMgT14MGOmmV8ObUXzNMQ==
+      integrity: sha512-WNSEiwbggtO9n6+ok2fFdYmhqY20oqLmB82H23nY8P5WzijZbIshojoY3s/OvPD7cmvzkweZ6LLKGWuDS1/vLA==
   /@tailwindcss/line-clamp/0.2.0:
     dev: false
     resolution:
@@ -959,10 +961,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
-  /@types/trusted-types/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-I8MnZqNXsOLHsU111oHbn3khtvKMi5Bn4qVFsIWSJcCP1KKDiXX5AEw8UPk0nSopeC+Hvxt6yAy1/a5PailFqg==
   /@types/yargs-parser/20.2.0:
     dev: false
     resolution:
@@ -2905,6 +2903,21 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
+  /glob-base/0.3.0:
+    dependencies:
+      glob-parent: 2.0.0
+      is-glob: 2.0.1
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-27Fk9iIbHAscz4Kuoyi0l98Oo8Q=
+  /glob-parent/2.0.0:
+    dependencies:
+      is-glob: 2.0.1
+    dev: true
+    resolution:
+      integrity: sha1-gTg9ctsFT8zPUzbaqQLxgvbtuyg=
   /glob-parent/5.1.2:
     dependencies:
       is-glob: 4.0.1
@@ -3295,6 +3308,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-ZOoqiXfEwtGknTiuDEy8pN2CfE3TxMHprvNer1mXiqwkOT77Rw3YVrUQ52EqAOU3QAWDQ+bQdx7HJzrv7LS2Hw==
+  /is-dotfile/1.0.3:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-pqLzL/0t+wT1yiXs0Pa4PPeYoeE=
   /is-extendable/0.1.1:
     dev: false
     engines:
@@ -3309,6 +3328,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-arnXMxT1hhoKo9k1LZdmlNyJdDDfy2v0fXjFlmok4+i8ul/6WlbVge9bhM74OpNPQPMGUToDtz+KXa1PneJxOA==
+  /is-extglob/1.0.0:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-rEaBd8SUNAWgkvyPKXYMb/xiBsA=
   /is-extglob/2.1.1:
     dev: true
     engines:
@@ -3326,6 +3351,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-cTIB4yPYL/Grw0EaSzASzg6bBy9gqCofvWN8okThAYIxKJZC+udlRAmGbM0XLeniEJSs8uEgHPGuHSe1XsOLSQ==
+  /is-glob/2.0.1:
+    dependencies:
+      is-extglob: 1.0.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-0Jb5JqPe1WAPP9/ZEZjLCIjC2GM=
   /is-glob/4.0.1:
     dependencies:
       is-extglob: 2.1.1
@@ -3963,44 +3996,6 @@ packages:
         optional: true
     resolution:
       integrity: sha512-pF73EOsJgwZekbDHEY5VO/yKXUkab/DuvrQB/ANVizbr6UAHJsDdHXuotZYwkJSGQl1JM+ivXaqY+XBDDL4TiA==
-  /jsdom/16.5.2:
-    dependencies:
-      abab: 2.0.5
-      acorn: 8.1.0
-      acorn-globals: 6.0.0
-      cssom: 0.4.4
-      cssstyle: 2.3.0
-      data-urls: 2.0.0
-      decimal.js: 10.2.1
-      domexception: 2.0.1
-      escodegen: 2.0.0
-      html-encoding-sniffer: 2.0.1
-      is-potential-custom-element-name: 1.0.0
-      nwsapi: 2.2.0
-      parse5: 6.0.1
-      request: 2.88.2
-      request-promise-native: 1.0.9_request@2.88.2
-      saxes: 5.0.1
-      symbol-tree: 3.2.4
-      tough-cookie: 4.0.0
-      w3c-hr-time: 1.0.2
-      w3c-xmlserializer: 2.0.0
-      webidl-conversions: 6.1.0
-      whatwg-encoding: 1.0.5
-      whatwg-mimetype: 2.3.0
-      whatwg-url: 8.5.0
-      ws: 7.4.4
-      xml-name-validator: 3.0.0
-    dev: false
-    engines:
-      node: '>=10'
-    peerDependencies:
-      canvas: ^2.5.0
-    peerDependenciesMeta:
-      canvas:
-        optional: true
-    resolution:
-      integrity: sha512-JxNtPt9C1ut85boCbJmffaQ06NBnzkQY/MWO3YxPW8IWS38A26z+B1oBvA9LwKrytewdfymnhi4UNH3/RAgZrg==
   /jsesc/2.5.2:
     engines:
       node: '>=4'
@@ -4659,6 +4654,17 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==
+  /parse-glob/3.0.4:
+    dependencies:
+      glob-base: 0.3.0
+      is-dotfile: 1.0.3
+      is-extglob: 1.0.0
+      is-glob: 2.0.1
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-ssN2z7EfNVE7rdFz7wu246OIORw=
   /parse-json/2.2.0:
     dependencies:
       error-ex: 1.3.2
@@ -5674,6 +5680,10 @@ packages:
       svelte: '>=3.19.0'
     resolution:
       integrity: sha512-gagW62pLQ2lULmvNA3pIZu9pBCYOaGu3rQikUOv6Nokz5VxUgT9/mQLfMxj9phDEKHCg/lgr3i6PkqZDbO9P2Q==
+  /svelte-intersection-observer/0.6.0:
+    dev: false
+    resolution:
+      integrity: sha512-h6GJ75FjdVPxJHUx4SvEzH9lg4jMWL6PoNmMyIhJbEugKsxkap8C6Dpx5fbX7hp5ekvtafCosrYdvO65T8KruQ==
   /svelte-preprocess/4.6.9_bfabe6c7bc3d73e76d0bc9dab084c580:
     dependencies:
       '@types/pug': 2.0.4
@@ -6279,13 +6289,13 @@ specifiers:
   '@nick-mazuk/eslint-config': 0.7.46
   '@nick-mazuk/lib': ^0.8.34
   '@nick-mazuk/ui-config': 0.8.31
-  '@nick-mazuk/ui-svelte': 0.1.26
+  '@nick-mazuk/ui-svelte': 0.1.31
   '@sveltejs/adapter-node': next
   '@sveltejs/adapter-vercel': ^1.0.0-next.8
   '@sveltejs/kit': next
   '@tailwindcss/aspect-ratio': ^0.2.0
   '@tailwindcss/forms': ^0.3.2
-  '@tailwindcss/jit': ^0.1.8
+  '@tailwindcss/jit': ^0.1.18
   '@tailwindcss/line-clamp': ^0.2.0
   '@tailwindcss/typography': ^0.4.0
   autoprefixer: ^10.2.5

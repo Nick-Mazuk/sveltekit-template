@@ -1,48 +1,48 @@
-import { writable } from 'svelte/store'
+import { writable, get } from 'svelte/store'
 
-const toggleState = (isDark: boolean) => {
-    const body = document.querySelector('body')
-    if (!body) return
-    const { classList } = body
-    if (isDark) {
-        classList.add('dark')
-        return
-    }
-    classList.remove('dark')
-}
+type Theme = 'system' | 'dark' | 'light'
 
 const createDarkMode = () => {
-    const { subscribe, set, update } = writable(false)
+    const { subscribe, set } = writable<Theme>('system')
 
     return {
         subscribe,
-        toggle: () => update((isDark) => !isDark),
-        toggleAndSave: () =>
-            update((isDark) => {
-                localStorage.setItem('theme', isDark ? 'light' : 'dark')
-                return !isDark
-            }),
-        set,
+        set: (newTheme: Theme) => {
+            localStorage.setItem('theme', newTheme)
+            set(newTheme)
+        },
     }
 }
 
 const darkMode = createDarkMode()
 
-const handlePreferenceChange = (event: MediaQueryListEvent) => {
-    const hasDefinedTheme = localStorage.getItem('theme')
-    if (hasDefinedTheme) return
-    darkMode.set(event.matches)
+const setClass = (newTheme: Theme) => {
+    const { classList } = document.body
+    let isDark = newTheme === 'dark'
+    if (newTheme === 'system') isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (isDark) classList.add('dark')
+    else classList.remove('dark')
+}
+
+const handlePreferenceChange = () => {
+    if (get(darkMode) === 'system') setClass('system')
+}
+
+const handleLocalStorageChange = () => {
+    const theme = localStorage.getItem('theme') as Theme | null
+    if (theme) darkMode.set(theme)
 }
 
 const setupDarkMode = () => {
     const userPreferences = window.matchMedia('(prefers-color-scheme: dark)')
-    const setTheme = localStorage.getItem('theme')
+    const savedTheme = localStorage.getItem('theme') as Theme | null
 
-    if (setTheme) darkMode.set(setTheme === 'dark')
-    else darkMode.set(userPreferences.matches)
+    if (savedTheme) darkMode.set(savedTheme)
+    else darkMode.set('system')
 
-    darkMode.subscribe(toggleState)
+    darkMode.subscribe(setClass)
     userPreferences.addEventListener('change', handlePreferenceChange)
+    window.addEventListener('storage', handleLocalStorageChange)
 }
 
 if (typeof window !== 'undefined') setupDarkMode()
