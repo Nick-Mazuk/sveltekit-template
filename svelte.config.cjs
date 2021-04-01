@@ -10,7 +10,7 @@ module.exports = {
         },
     }),
     kit: {
-        adapter: adapter({ out: 'public' }),
+        adapter: adapter(),
         target: '#svelte',
 
         vite: {
