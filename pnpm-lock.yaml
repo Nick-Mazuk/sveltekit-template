@@ -1,6 +1,6 @@
 dependencies:
   '@nick-mazuk/lib': 0.8.34
-  '@nick-mazuk/ui-svelte': 0.1.31_4ad415e86a7a96d4637d854a9dc62c9b
+  '@nick-mazuk/ui-svelte': 0.1.33_4ad415e86a7a96d4637d854a9dc62c9b
   '@sveltejs/adapter-vercel': 1.0.0-next.8
   '@tailwindcss/aspect-ratio': 0.2.0
   '@tailwindcss/forms': 0.3.2_tailwindcss@2.0.4
@@ -715,7 +715,7 @@ packages:
       tailwindcss: '>= 2.0.3'
     resolution:
       integrity: sha512-pLM1ZisOjbMctBbHrJK4VcZLNuFX4t0oU9bA99m3tzME941B4ItaAwql2LXOPvsicNVszcFkFln0JPV+0xqyMQ==
-  /@nick-mazuk/ui-svelte/0.1.31_4ad415e86a7a96d4637d854a9dc62c9b:
+  /@nick-mazuk/ui-svelte/0.1.33_4ad415e86a7a96d4637d854a9dc62c9b:
     dependencies:
       '@nick-mazuk/lib': 0.8.34
       '@nick-mazuk/ui-config': 0.8.31_ef3666f93dae38fdaa5181904bd89550
@@ -736,7 +736,7 @@ packages:
       '@tailwindcss/typography': ^0.4.0
       tailwindcss: ^2.0.4
     resolution:
-      integrity: sha512-BUMFWciNdqgNxcqCED0BOzxUcAxUg+C+Gagye0qvUGy1hEEKipYwkp/30uWKz8qpS2hWXfp8+4hP47ysUz3WBw==
+      integrity: sha512-veOh32s4EATLbkhP0yQGX2itcxX6gZhQXeXKwqm6/ce5fzQwTI89fhFuBCPlLs1Fz4dDg0eHCSgLpla0Nmma6g==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -6289,7 +6289,7 @@ specifiers:
   '@nick-mazuk/eslint-config': 0.7.46
   '@nick-mazuk/lib': ^0.8.34
   '@nick-mazuk/ui-config': 0.8.31
-  '@nick-mazuk/ui-svelte': 0.1.31
+  '@nick-mazuk/ui-svelte': 0.1.33
   '@sveltejs/adapter-node': next
   '@sveltejs/adapter-vercel': ^1.0.0-next.8
   '@sveltejs/kit': next
