@@ -14,8 +14,8 @@
         "lint": "npm run prettier && npm run check-types && npm run svelte-check && npm run eslint"
     },
     "devDependencies": {
-        "@nick-mazuk/eslint-config": "0.7.46",
-        "@nick-mazuk/ui-config": "0.8.31",
+        "@nick-mazuk/eslint-config": "0.7.50",
+        "@nick-mazuk/ui-config": "0.8.59",
         "@sveltejs/adapter-node": "next",
         "@sveltejs/kit": "next",
         "@tailwindcss/jit": "^0.1.18",
@@ -36,7 +36,7 @@
     },
     "dependencies": {
         "@nick-mazuk/lib": "^0.8.34",
-        "@nick-mazuk/ui-svelte": "0.1.33",
+        "@nick-mazuk/ui-svelte": "0.1.42",
         "@sveltejs/adapter-vercel": "^1.0.0-next.8",
         "@tailwindcss/aspect-ratio": "^0.2.0",
         "@tailwindcss/forms": "^0.3.2",
