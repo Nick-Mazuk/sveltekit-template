@@ -1,18 +1,42 @@
-name: CI
+name: Continuous Integration
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
-    test-push:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node: [10, 12, 14]
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2.1.5
-              with:
-                  node-version: ${{ matrix.node }}
-            - run: npx pnpm i
-            - run: npm run lint
-            - run: npm run test
+  test-push:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [12, 14]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npx pnpm i --frozen-lockfile=false
+      - run: npm run lint
+
+  cypress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        browser:
+          - chrome
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14
+      - run: npx pnpm i --frozen-lockfile=false
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          browser: ${{ matrix.browser }}
+          install: false
+          start: npm run preview
+          wait-on: "http://localhost:3000"
+          wait-on-timeout: 180
+          group: "UI - ${{ matrix.browser }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
