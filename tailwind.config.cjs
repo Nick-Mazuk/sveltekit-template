@@ -1,11 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable import/no-commonjs */
-/* eslint-disable import/unambiguous */
-
 const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles')
 
 module.exports = {
-    presets: [require('@nick-mazuk/ui-config/lib/tailwind').config],
+    presets: [require('@nick-mazuk/ui-config').config],
     purge: {
         content: [
             './src/**/*.svelte',
