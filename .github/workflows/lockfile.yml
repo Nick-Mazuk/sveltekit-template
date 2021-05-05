@@ -1,12 +1,9 @@
-name: Update lockfile
+name: Fix lockfile
 
 on:
-  pull_request:
-    types:
-      - opened
-      - edited
+  push:
     branches:
-      - "dependabot**"
+      - "renovate**"
 
 jobs:
   update-lockfile:
@@ -22,3 +19,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+          message: "build: update lockfile"
