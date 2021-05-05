@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@nick-mazuk/eslint-config': ^0.8.5
+  '@nick-mazuk/eslint-config': ^0.8.9
   '@nick-mazuk/lib': ^0.8.41
   '@nick-mazuk/ui-config': ^0.10.30
   '@nick-mazuk/ui-svelte': ^0.4.3
@@ -29,7 +29,7 @@ dependencies:
   i: 0.3.6
 
 devDependencies:
-  '@nick-mazuk/eslint-config': 0.8.5_be3674dcae3b6f748f29cd1fed315ee1
+  '@nick-mazuk/eslint-config': 0.8.9_be3674dcae3b6f748f29cd1fed315ee1
   '@nick-mazuk/ui-config': 0.10.30_postcss@8.2.13+tailwindcss@2.1.2
   '@sveltejs/kit': 1.0.0-next.99_svelte@3.38.2+vite@2.2.4
   autoprefixer: 10.2.5_postcss@8.2.13
@@ -289,8 +289,8 @@ packages:
       purgecss: 3.1.3
     dev: true
 
-  /@nick-mazuk/eslint-config/0.8.5_be3674dcae3b6f748f29cd1fed315ee1:
-    resolution: {integrity: sha512-o1zg9nTsPFfQ5zZilNziCxVFoVADtj7MFn0maNG+Gd6GEbgAVhgL0NGKlUg2l8EvFFZyUKmhhzZSBelnczoYww==}
+  /@nick-mazuk/eslint-config/0.8.9_be3674dcae3b6f748f29cd1fed315ee1:
+    resolution: {integrity: sha512-3K44SO2VH9wxSk66nQNhM3gnEzsaoyAc/tDKHQSwPUaMTuzDjdhsJYNAZciS9SrXemO8KMuU0g9nXPUrldnenA==}
     peerDependencies:
       eslint: '>= 7.25.0'
       typescript: '>= 4.2.4'

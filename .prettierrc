@@ -13,10 +13,8 @@
     "htmlWhitespaceSensitivity": "css",
     "endOfLine": "lf",
     "embeddedLanguageFormatting": "auto",
-    "pluginSearchDirs": ["."],
-    "plugins": ["prettier-plugin-svelte"],
     "svelteStrictMode": true,
-    "svelteAllowShorthand": true,
+    "svelteAllowShorthand": false,
     "svelteBracketNewLine": true,
     "svelteIndentScriptAndStyle": true
 }
