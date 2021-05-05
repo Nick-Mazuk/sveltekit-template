@@ -21,12 +21,7 @@
 </script>
 
 {#if status === 404}
-    <Http404
-        links="{[
-            { href: '/', text: 'Home' },
-            { href: '/docs/getting-started', text: 'Docs' },
-        ]}"
-    />
+    <Http404 />
 {:else}
     <Http500 status="{status}" error="{error}" isDevelopment="{dev}" />
 {/if}
