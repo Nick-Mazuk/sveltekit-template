@@ -5,6 +5,8 @@ on: [push]
 jobs:
   test-push:
     runs-on: ubuntu-latest
+    env:
+      CYPRESS_INSTALL_BINARY: 0
     strategy:
       matrix:
         node: [12, 14]
@@ -37,6 +39,5 @@ jobs:
           start: npm run preview
           wait-on: "http://localhost:3000"
           wait-on-timeout: 180
-          group: "UI - ${{ matrix.browser }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
