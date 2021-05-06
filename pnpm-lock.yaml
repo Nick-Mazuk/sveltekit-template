@@ -13,7 +13,6 @@ specifiers:
   cypress-plugin-tab: ^1.0.5
   cypress-real-events: ^1.4.0
   eslint: ^7.25.0
-  i: ^0.3.6
   postcss: ^8.2.13
   postcss-load-config: ^3.0.1
   prettier: ^2.2.1
@@ -30,7 +29,6 @@ dependencies:
   '@nick-mazuk/lib': 0.8.41
   '@nick-mazuk/ui-svelte': 0.4.3_8b98ea2a2952126f960dfbfa3e826634
   '@sveltejs/adapter-vercel': 1.0.0-next.16_svelte@3.38.2+vite@2.2.4
-  i: 0.3.6
 
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.9_be3674dcae3b6f748f29cd1fed315ee1
@@ -2348,11 +2346,6 @@ packages:
     resolution: {integrity: sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==}
     engines: {node: '>=8.12.0'}
     dev: true
-
-  /i/0.3.6:
-    resolution: {integrity: sha1-2WyScyB28HJxG2sQ/X1PZa2O4j0=}
-    engines: {node: '>=0.4'}
-    dev: false
 
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
