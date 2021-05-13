@@ -17,7 +17,7 @@
         "cy:run": "cypress run"
     },
     "devDependencies": {
-        "@nick-mazuk/eslint-config": "^0.8.9",
+        "@nick-mazuk/eslint-config": "^0.8.11",
         "@nick-mazuk/ui-config": "^0.10.30",
         "@sveltejs/kit": "^1.0.0-next.99",
         "autoprefixer": "^10.2.5",
@@ -40,7 +40,7 @@
     },
     "dependencies": {
         "@nick-mazuk/lib": "^0.8.41",
-        "@nick-mazuk/ui-svelte": "^0.4.3",
+        "@nick-mazuk/ui-svelte": "^0.5.0",
         "@sveltejs/adapter-vercel": "^1.0.0-next.16"
     }
 }
