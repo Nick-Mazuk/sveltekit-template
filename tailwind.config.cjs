@@ -7,6 +7,7 @@ module.exports = {
             './src/**/*.svelte',
             './src/app.html',
             '**/node_modules/@nick-mazuk/ui-svelte/**/*.svelte',
+            '**/node_modules/@nick-mazuk/ui-svelte/**/*.ts',
         ],
         options: {
             defaultExtractor: (content) => [
