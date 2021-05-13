@@ -6,7 +6,7 @@ specifiers:
   '@nick-mazuk/ui-config': ^0.10.30
   '@nick-mazuk/ui-svelte': ^0.5.0
   '@sveltejs/adapter-vercel': ^1.0.0-next.16
-  '@sveltejs/kit': ^1.0.0-next.99
+  '@sveltejs/kit': ^1.0.0-next.107
   autoprefixer: ^10.2.5
   cypress: ^7.2.0
   cypress-axe: ^0.12.2
@@ -33,7 +33,7 @@ dependencies:
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.11_be3674dcae3b6f748f29cd1fed315ee1
   '@nick-mazuk/ui-config': 0.10.30_postcss@8.2.13+tailwindcss@2.1.2
-  '@sveltejs/kit': 1.0.0-next.99_svelte@3.38.2+vite@2.2.4
+  '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
   autoprefixer: 10.2.5_postcss@8.2.13
   cypress: 7.2.0
   cypress-axe: 0.12.2_cypress@7.2.0
@@ -466,6 +466,23 @@ packages:
       - vite
     dev: false
 
+  /@sveltejs/kit/1.0.0-next.107_svelte@3.38.2:
+    resolution: {integrity: sha512-HxomGMWbuWTU8lahk98hqIL/xjW6HzNTAvTZVMnnmlMHN1N8x7+abkz4Y09Zhu8lZkZpFuqBj2UlsgPW4uJXtw==}
+    engines: {node: '>= 12.17.0'}
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.38.2
+    dependencies:
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.2
+      cheap-watch: 1.0.3
+      sade: 1.7.4
+      svelte: 3.38.2
+      vite: 2.3.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /@sveltejs/kit/1.0.0-next.98_svelte@3.38.2+vite@2.2.4:
     resolution: {integrity: sha512-WAbxMLAmgJ1dwtmRm46dXSYewIIs8ykjl3yWwdqdPrOBY420HQyrvBjMmh9OVyBaCRy/He5blnMWRFDKUqNQng==}
     engines: {node: '>= 12.17.0'}
@@ -484,19 +501,23 @@ packages:
       - supports-color
     dev: false
 
-  /@sveltejs/kit/1.0.0-next.99_svelte@3.38.2+vite@2.2.4:
-    resolution: {integrity: sha512-eLVo8/fE6DrNFRCx4fLU2MKolVhMPHlBkhA04kpsNaojC6PW9kW9w7DEpeK5WCYYzxhirvmABsUyw37pQfjZVA==}
-    engines: {node: '>= 12.17.0'}
-    hasBin: true
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.10_svelte@3.38.2+vite@2.3.2:
+    resolution: {integrity: sha512-ImvxbhPePm2hWNTKBSA3LHAYGwiEjHjvvgfPLXm4R87sfZ+BMXql9jBmDpzUC/URBLT4BB3Jxos/i523qkJBHg==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
-      svelte: ^3.34.0
+      svelte: ^3.37.0
       vite: ^2.2.3
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.9_svelte@3.38.2+vite@2.2.4
-      cheap-watch: 1.0.3
-      sade: 1.7.4
+      '@rollup/pluginutils': 4.1.0
+      chalk: 4.1.1
+      debug: 4.3.2
+      hash-sum: 2.0.0
+      require-relative: 0.8.7
+      slash: 4.0.0
+      source-map: 0.7.3
       svelte: 3.38.2
-      vite: 2.2.4
+      svelte-hmr: 0.14.3_svelte@3.38.2
+      vite: 2.3.2
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -522,6 +543,7 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+    dev: false
 
   /@types/json-schema/7.0.7:
     resolution: {integrity: sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==}
@@ -1582,6 +1604,12 @@ packages:
     hasBin: true
     requiresBuild: true
     dev: false
+
+  /esbuild/0.11.20:
+    resolution: {integrity: sha512-QOZrVpN/Yz74xfat0H6euSgn3RnwLevY1mJTEXneukz1ln9qB+ieaerRMzSeETpz/UJWsBMzRVR/andBht5WKw==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
 
   /esbuild/0.9.7:
     resolution: {integrity: sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==}
@@ -2996,6 +3024,12 @@ packages:
     hasBin: true
     dev: true
 
+  /nanoid/3.1.23:
+    resolution: {integrity: sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
@@ -3357,6 +3391,15 @@ packages:
     dependencies:
       colorette: 1.2.2
       nanoid: 3.1.22
+      source-map: 0.6.1
+    dev: true
+
+  /postcss/8.2.15:
+    resolution: {integrity: sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      colorette: 1.2.2
+      nanoid: 3.1.23
       source-map: 0.6.1
     dev: true
 
@@ -4257,6 +4300,19 @@ packages:
     dependencies:
       esbuild: 0.9.7
       postcss: 8.2.13
+      resolve: 1.20.0
+      rollup: 2.47.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vite/2.3.2:
+    resolution: {integrity: sha512-QhLdOompDrfkyryCNTts9HE+eJhvhN9ibKNJ5Q8DpQai+6nOsuIlaveZNg67e1O/2QaWqXeBo82eHnAs1De2bQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      esbuild: 0.11.20
+      postcss: 8.2.15
       resolve: 1.20.0
       rollup: 2.47.0
     optionalDependencies:
