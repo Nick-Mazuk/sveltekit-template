@@ -2,9 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@nick-mazuk/eslint-config': ^0.8.11
-  '@nick-mazuk/lib': ^0.8.41
+  '@nick-mazuk/lib': ^0.8.49
   '@nick-mazuk/ui-config': ^0.10.30
-  '@nick-mazuk/ui-svelte': ^0.5.0
+  '@nick-mazuk/ui-svelte': ^0.5.3
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
   '@sveltejs/kit': ^1.0.0-next.107
   autoprefixer: ^10.2.5
@@ -26,8 +26,8 @@ specifiers:
   vite: ^2.2.4
 
 dependencies:
-  '@nick-mazuk/lib': 0.8.43
-  '@nick-mazuk/ui-svelte': 0.5.0_ab0ad4334cd3753446bc6444a1a0e56b
+  '@nick-mazuk/lib': 0.8.49
+  '@nick-mazuk/ui-svelte': 0.5.3_6b8140f97456149367ff8301abb2bb6e
   '@sveltejs/adapter-vercel': 1.0.0-next.17_svelte@3.38.2
 
 devDependencies:
@@ -372,9 +372,10 @@ packages:
       - svelte
     dev: true
 
-  /@nick-mazuk/lib/0.8.43:
-    resolution: {integrity: sha512-U+qoqm7u2LLmgzy3ZBY6QD+PzlG3nFZOBLKm0tw3t8PJMQ5NY2H9egqij9gXbgdVJ2mZDq4R1zhnDt9u9llP6A==}
+  /@nick-mazuk/lib/0.8.49:
+    resolution: {integrity: sha512-GyYfbjr7f+0s9zvXp1koUXr4g+mY15HFSvR5wF4+0Rs6LMirzW/NQmEZTzdTDPaewg8D6rrS3n/NNQcS98AoVg==}
     dependencies:
+      crypto-es: 1.2.7
       validator: 13.6.0
     dev: false
 
@@ -386,14 +387,14 @@ packages:
       tailwindcss: 2.1.2_797cfc3ceddb49f111b184f6879a433f
     dev: true
 
-  /@nick-mazuk/ui-svelte/0.5.0_ab0ad4334cd3753446bc6444a1a0e56b:
-    resolution: {integrity: sha512-2of0mHdr2NJhA5lUaxfDl+OhuQG/UMGogAYOQxCpOQnRjN2LkThj9bmUBCFFnc4yCKsNkH/15/P4BuxW8vsfzg==}
+  /@nick-mazuk/ui-svelte/0.5.3_6b8140f97456149367ff8301abb2bb6e:
+    resolution: {integrity: sha512-7b/l+eII0W07/eolDrFLWje3U4EBWtj7sNHpuNhbAYqYwlT3cFjo9FSPAaNxenw9Wbki5hhcrFO0+r3IC1y7Og==}
     peerDependencies:
-      '@nick-mazuk/lib': ^0.8.43
+      '@nick-mazuk/lib': ^0.8.49
       '@nick-mazuk/ui-config': ^0.10.41
       tailwindcss: ^2.1.1
     dependencies:
-      '@nick-mazuk/lib': 0.8.43
+      '@nick-mazuk/lib': 0.8.49
       '@nick-mazuk/ui-config': 0.10.41_tailwindcss@2.1.2
       '@types/validator': 13.1.3
       '@types/zxcvbn': 4.4.1
@@ -1265,6 +1266,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crypto-es/1.2.7:
+    resolution: {integrity: sha512-UUqiVJ2gUuZFmbFsKmud3uuLcNP2+Opt+5ysmljycFCyhA0+T16XJmo1ev/t5kMChMqWh7IEvURNCqsg+SjZGQ==}
+    dev: false
 
   /css-unit-converter/1.1.2:
     resolution: {integrity: sha512-IiJwMC8rdZE0+xiEZHeru6YoONC4rfPMqGm2W85jMIbkFvv5nFTwJVFHam2eFrN6txmoUYFAFXiv8ICVeTO0MA==}
