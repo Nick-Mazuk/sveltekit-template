@@ -5,3 +5,5 @@ declare namespace Cypress {
         screenSize(size: 'tiny' | 'sm' | 'md' | 'lg'): Chainable<Element>
     }
 }
+
+interface ImportMetaEnv {}
