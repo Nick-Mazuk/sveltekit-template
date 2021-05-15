@@ -3,9 +3,9 @@ lockfileVersion: 5.3
 specifiers:
   '@nick-mazuk/eslint-config': ^0.8.11
   '@nick-mazuk/lib': ^0.8.49
-  '@nick-mazuk/sveltekit-cli': ^1.0.2
+  '@nick-mazuk/sveltekit-cli': ^1.1.1
   '@nick-mazuk/ui-config': ^0.10.30
-  '@nick-mazuk/ui-svelte': ^0.6.0
+  '@nick-mazuk/ui-svelte': ^0.7.0
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
   '@sveltejs/kit': ^1.0.0-next.107
   autoprefixer: ^10.2.5
@@ -28,12 +28,12 @@ specifiers:
 
 dependencies:
   '@nick-mazuk/lib': 0.8.49
-  '@nick-mazuk/ui-svelte': 0.6.0_6b8140f97456149367ff8301abb2bb6e
+  '@nick-mazuk/ui-svelte': 0.7.0_6b8140f97456149367ff8301abb2bb6e
   '@sveltejs/adapter-vercel': 1.0.0-next.17_svelte@3.38.2
 
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.11_157d6ab7d17f29a59760b96f899561f0
-  '@nick-mazuk/sveltekit-cli': 1.0.2
+  '@nick-mazuk/sveltekit-cli': 1.1.1
   '@nick-mazuk/ui-config': 0.10.41_tailwindcss@2.1.2
   '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
   autoprefixer: 10.2.5_postcss@8.2.15
@@ -381,8 +381,8 @@ packages:
       validator: 13.6.0
     dev: false
 
-  /@nick-mazuk/sveltekit-cli/1.0.2:
-    resolution: {integrity: sha512-Qm2rsdo0ZaDYAH+XFAuyBOMYMi1rXrTt1exJxZtvhIliOQ/THGDAlPc1FcwUswn83mlAvOEizJHHrvxtaA7LAQ==}
+  /@nick-mazuk/sveltekit-cli/1.1.1:
+    resolution: {integrity: sha512-O6OU+Dkmwm5JShVmOIJmJ6fBq6w0JnvxS1q5pQAlW7XvLjkL4yTjb2KWVII9LOgCClZ1mPugnej6Dc4pfpkNuA==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -398,8 +398,8 @@ packages:
       tailwindcss: 2.1.2_797cfc3ceddb49f111b184f6879a433f
     dev: true
 
-  /@nick-mazuk/ui-svelte/0.6.0_6b8140f97456149367ff8301abb2bb6e:
-    resolution: {integrity: sha512-77g91qCGzenNcBHqlqYrCrEqVgwv+V7a0veR6c5E7x8+Bg9qsNIaMZwPK46P5lsWrjTVsRgsmRNeRgMt25/0wQ==}
+  /@nick-mazuk/ui-svelte/0.7.0_6b8140f97456149367ff8301abb2bb6e:
+    resolution: {integrity: sha512-fuqHVEOyxlm0xrQN8and/FASSUa7/wrR310PR/L3hO0hNi/7r2inqgkUawBKtiY3BxEqng6jtnXEmjA4VS3OJQ==}
     peerDependencies:
       '@nick-mazuk/lib': ^0.8.49
       '@nick-mazuk/ui-config': ^0.10.43

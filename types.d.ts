@@ -6,4 +6,6 @@ declare namespace Cypress {
     }
 }
 
-interface ImportMetaEnv {}
+interface ImportMetaEnv {
+    VITE_PUBLIC_SITE_NAME: string
+}
