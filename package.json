@@ -11,7 +11,7 @@
         "check-types": "tsc --noemit",
         "prettier": "prettier --write . --plugin-search-dir=. --quiet",
         "svelte-check": "svelte-check",
-        "eslint": "eslint . --quiet --fix",
+        "eslint": "eslint . --quiet",
         "lint": "npm run prettier && npm run check-types && npm run svelte-check && npm run eslint",
         "cy:open": "cypress open",
         "cy:run": "cypress run",
