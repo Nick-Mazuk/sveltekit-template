@@ -2,6 +2,7 @@
     "compilerOptions": {
         "moduleResolution": "node",
         "target": "es2018",
+        "module": "ESNext",
         "importsNotUsedAsValues": "error",
         "types": ["cypress", "cypress-axe", "cypress-real-events"],
         "isolatedModules": true,

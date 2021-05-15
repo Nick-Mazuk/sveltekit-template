@@ -14,10 +14,14 @@
         "eslint": "eslint . --quiet --fix",
         "lint": "npm run prettier && npm run check-types && npm run svelte-check && npm run eslint",
         "cy:open": "cypress open",
-        "cy:run": "cypress run"
+        "cy:run": "cypress run",
+        "create-page": "kit create-page",
+        "create-layout": "kit create-layout",
+        "create-endpoint": "kit create-endpoint"
     },
     "devDependencies": {
         "@nick-mazuk/eslint-config": "^0.8.11",
+        "@nick-mazuk/sveltekit-cli": "^1.0.2",
         "@nick-mazuk/ui-config": "^0.10.30",
         "@sveltejs/kit": "^1.0.0-next.107",
         "autoprefixer": "^10.2.5",

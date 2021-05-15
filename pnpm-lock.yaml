@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@nick-mazuk/eslint-config': ^0.8.11
   '@nick-mazuk/lib': ^0.8.49
+  '@nick-mazuk/sveltekit-cli': ^1.0.2
   '@nick-mazuk/ui-config': ^0.10.30
   '@nick-mazuk/ui-svelte': ^0.5.3
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
@@ -32,6 +33,7 @@ dependencies:
 
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.11_157d6ab7d17f29a59760b96f899561f0
+  '@nick-mazuk/sveltekit-cli': 1.0.2
   '@nick-mazuk/ui-config': 0.10.41_tailwindcss@2.1.2
   '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
   autoprefixer: 10.2.5_postcss@8.2.15
@@ -378,6 +380,15 @@ packages:
       crypto-es: 1.2.7
       validator: 13.6.0
     dev: false
+
+  /@nick-mazuk/sveltekit-cli/1.0.2:
+    resolution: {integrity: sha512-Qm2rsdo0ZaDYAH+XFAuyBOMYMi1rXrTt1exJxZtvhIliOQ/THGDAlPc1FcwUswn83mlAvOEizJHHrvxtaA7LAQ==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      fs-extra: 10.0.0
+      prompts: 2.4.1
+    dev: true
 
   /@nick-mazuk/ui-config/0.10.41_tailwindcss@2.1.2:
     resolution: {integrity: sha512-qFMPIT79/5/j1btfIrhxdqOe4f9nrazILi38Ho6LMHYd+k2vQSjS8MMOWeZkBsJb87dDFBGREebpQbzfy6ydEg==}
@@ -2149,6 +2160,15 @@ packages:
     resolution: {integrity: sha512-o9lSKpK0TDqDwTL24Hxqi6I99s942l6TYkfl6WvGWgLOIFz/YonSGKfiSeMadoiNvTfqnfOa9mjb5SGVbBK9/w==}
     dev: true
 
+  /fs-extra/10.0.0:
+    resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.6
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs-extra/9.1.0:
     resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
     engines: {node: '>=10'}
@@ -2701,6 +2721,11 @@ packages:
     dependencies:
       array-includes: 3.1.3
       object.assign: 4.1.2
+    dev: true
+
+  /kleur/3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
     dev: true
 
   /language-subtag-registry/0.3.21:
@@ -3371,6 +3396,14 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
+  /prompts/2.4.1:
+    resolution: {integrity: sha512-EQyfIuO2hPDsX1L/blblV+H7I0knhgAd82cVneCwcdND9B8AuCDuRcBH6yIcG4dFzlOUqbazQqwGjx5xmsNLuQ==}
+    engines: {node: '>= 6'}
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
+    dev: true
+
   /prop-types/15.7.2:
     resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
     dependencies:
@@ -3679,6 +3712,10 @@ packages:
     resolution: {integrity: sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=}
     dependencies:
       is-arrayish: 0.3.2
+    dev: true
+
+  /sisteransi/1.0.5:
+    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
   /slash/3.0.0:
