@@ -4,7 +4,7 @@ specifiers:
   '@nick-mazuk/eslint-config': ^0.8.11
   '@nick-mazuk/lib': ^0.8.49
   '@nick-mazuk/sveltekit-cli': ^1.1.1
-  '@nick-mazuk/ui-config': ^0.10.30
+  '@nick-mazuk/ui-config': ^0.10.45
   '@nick-mazuk/ui-svelte': ^0.8.0
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
   '@sveltejs/kit': ^1.0.0-next.107
@@ -28,13 +28,13 @@ specifiers:
 
 dependencies:
   '@nick-mazuk/lib': 0.8.49
-  '@nick-mazuk/ui-svelte': 0.8.4_c2171cef23b8c1078042a49381e3b172
+  '@nick-mazuk/ui-svelte': 0.8.4_83d10e96904884daa2a0ce62a3f1f2c8
   '@sveltejs/adapter-vercel': 1.0.0-next.17_svelte@3.38.2
 
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.11_157d6ab7d17f29a59760b96f899561f0
   '@nick-mazuk/sveltekit-cli': 1.1.1
-  '@nick-mazuk/ui-config': 0.10.44_tailwindcss@2.1.2
+  '@nick-mazuk/ui-config': 0.10.45_tailwindcss@2.1.2
   '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
   autoprefixer: 10.2.5_postcss@8.2.15
   cypress: 7.3.0
@@ -390,15 +390,15 @@ packages:
       prompts: 2.4.1
     dev: true
 
-  /@nick-mazuk/ui-config/0.10.44_tailwindcss@2.1.2:
-    resolution: {integrity: sha512-SPuph6NEhpiz0wsLzie3hQAX4EcJ3aUSKVEFufzesSKvotMximKjeqBxK3Zgpfz9H0KH4kOhb8DJHfosLV97qA==}
+  /@nick-mazuk/ui-config/0.10.45_tailwindcss@2.1.2:
+    resolution: {integrity: sha512-L07CyIF1ZHNjkEWYbgimTolF0DSJUYsDg/zOK2ZEhF63CzOe3w0lMh1x60NwnvaHsCR4pygE5o0JXmy+Izeuow==}
     peerDependencies:
       tailwindcss: ^2.1.1
     dependencies:
       tailwindcss: 2.1.2_797cfc3ceddb49f111b184f6879a433f
     dev: true
 
-  /@nick-mazuk/ui-svelte/0.8.4_c2171cef23b8c1078042a49381e3b172:
+  /@nick-mazuk/ui-svelte/0.8.4_83d10e96904884daa2a0ce62a3f1f2c8:
     resolution: {integrity: sha512-cQtd47I/jE/m5eOU+gBf8EMCK5yQPSNVm2gVTdGX34hJgQCcJlQw89P1YGHJ1TuPleZv5JtguTmRzXdnohyW9w==}
     peerDependencies:
       '@nick-mazuk/lib': ^0.8.49
@@ -406,7 +406,7 @@ packages:
       tailwindcss: ^2.1.1
     dependencies:
       '@nick-mazuk/lib': 0.8.49
-      '@nick-mazuk/ui-config': 0.10.44_tailwindcss@2.1.2
+      '@nick-mazuk/ui-config': 0.10.45_tailwindcss@2.1.2
       diff: 5.0.0
       marked: 2.0.3
       svelte-intersection-observer: 0.7.0
