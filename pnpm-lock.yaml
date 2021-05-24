@@ -5,7 +5,7 @@ specifiers:
   '@nick-mazuk/lib': ^0.8.49
   '@nick-mazuk/sveltekit-cli': ^1.1.1
   '@nick-mazuk/ui-config': ^0.10.45
-  '@nick-mazuk/ui-svelte': ^0.10.0
+  '@nick-mazuk/ui-svelte': ^0.11.0
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
   '@sveltejs/kit': ^1.0.0-next.107
   autoprefixer: ^10.2.5
@@ -28,7 +28,7 @@ specifiers:
 
 dependencies:
   '@nick-mazuk/lib': 0.8.51
-  '@nick-mazuk/ui-svelte': 0.10.1_534dfc39f81cdd08dd2af03adf1e7338
+  '@nick-mazuk/ui-svelte': 0.11.0_534dfc39f81cdd08dd2af03adf1e7338
   '@sveltejs/adapter-vercel': 1.0.0-next.19_@sveltejs+kit@1.0.0-next.109
 
 devDependencies:
@@ -398,8 +398,8 @@ packages:
       tailwindcss: 2.1.2_bce0498cf0c3ab962ab667a3a4ae1b48
     dev: true
 
-  /@nick-mazuk/ui-svelte/0.10.1_534dfc39f81cdd08dd2af03adf1e7338:
-    resolution: {integrity: sha512-iue9ow4wqgLE94Ej+z6PU2dYGrx/p/rEvLZZ+lrnKKNPY6/o5QuDBoKY9AT9tlER3LXBZq5rIumljnMHublEMA==}
+  /@nick-mazuk/ui-svelte/0.11.0_534dfc39f81cdd08dd2af03adf1e7338:
+    resolution: {integrity: sha512-ZtfPVUMLTJmFCOFJYS1xAEPcyRYub58JlINs2nRNZFiJdwnqRO9t8nH5ClAyTT9yPFhoAGoVitn1HX809DmouQ==}
     peerDependencies:
       '@nick-mazuk/lib': ^0.8.50
       '@nick-mazuk/ui-config': ^0.10.52
@@ -425,6 +425,7 @@ packages:
       '@tiptap/extension-paragraph': 2.0.0-beta.14_@tiptap+core@2.0.0-beta.66
       '@tiptap/extension-text': 2.0.0-beta.12_@tiptap+core@2.0.0-beta.66
       '@tiptap/extension-typography': 2.0.0-beta.12_@tiptap+core@2.0.0-beta.66
+      date-fns: 2.21.3
       diff: 5.0.0
       marked: 2.0.5
       parse-full-name-esm: 1.2.6
@@ -1616,6 +1617,11 @@ packages:
   /date-fns/1.30.1:
     resolution: {integrity: sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==}
     dev: true
+
+  /date-fns/2.21.3:
+    resolution: {integrity: sha512-HeYdzCaFflc1i4tGbj7JKMjM4cKGYoyxwcIIkHzNgCkX8xXDNJDZXgDDVchIWpN4eQc3lH37WarduXFZJOtxfw==}
+    engines: {node: '>=0.11'}
+    dev: false
 
   /dayjs/1.10.4:
     resolution: {integrity: sha512-RI/Hh4kqRc1UKLOAf/T5zdMMX5DQIlDxwUe3wSyMMnEbGunnpENCdbUgM+dW7kXidZqCttBrmw7BhN4TMddkCw==}
