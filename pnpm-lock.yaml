@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@nick-mazuk/eslint-config': ^0.8.11
   '@nick-mazuk/lib': ^0.8.49
-  '@nick-mazuk/sveltekit-cli': ^1.1.1
+  '@nick-mazuk/sveltekit-cli': ^1.2.0
   '@nick-mazuk/ui-config': ^0.10.45
   '@nick-mazuk/ui-svelte': ^0.13.0
   '@sveltejs/adapter-vercel': ^1.0.0-next.17
@@ -33,7 +33,7 @@ dependencies:
 
 devDependencies:
   '@nick-mazuk/eslint-config': 0.8.11_7943e518045d489865a49f95ef21d3d7
-  '@nick-mazuk/sveltekit-cli': 1.1.3
+  '@nick-mazuk/sveltekit-cli': 1.2.0
   '@nick-mazuk/ui-config': 0.10.53_tailwindcss@2.1.2
   '@sveltejs/kit': 1.0.0-next.109_svelte@3.38.2
   autoprefixer: 10.2.5_postcss@8.3.0
@@ -381,8 +381,8 @@ packages:
       validator: 13.6.0
     dev: false
 
-  /@nick-mazuk/sveltekit-cli/1.1.3:
-    resolution: {integrity: sha512-YfgyIDr1n67OLqscXzAFL/V/WvDMm0tPWopGN9rw4u8czVDzEYP2kbLzACNOC/9SYEZG7mpnAkb9rUC8u1UZLQ==}
+  /@nick-mazuk/sveltekit-cli/1.2.0:
+    resolution: {integrity: sha512-50Wz+1lu5gqw52dpx0zZ25JsnepfIhuUaYbkXPj30Rl0zz7eDuD0DDj9ogfcNhnMmkcn2b6Sut2Y9R2BTpIjeQ==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:

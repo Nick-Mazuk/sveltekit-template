@@ -1,9 +1,8 @@
 <script>
-    import '@nick-mazuk/ui-config/lib/colors.css'
-    import '@nick-mazuk/ui-config/lib/styles.css'
-    import LoadingProgressIndicator from '@nick-mazuk/ui-svelte/src/elements/loading-progress-indicator/loading-progress-indicator.svelte'
+    import ResetItems from '$lib/stores/components/reset-items.svelte'
+
 </script>
 
-<LoadingProgressIndicator />
+<ResetItems />
 
 <slot />
