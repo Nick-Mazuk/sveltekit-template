@@ -1,5 +1,5 @@
 <script>
-    import ResetItems from '$lib/stores/components/reset-items.svelte'
+    import ResetItems from '$lib/components/reset-items.svelte'
 
 </script>
 
