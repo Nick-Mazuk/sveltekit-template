@@ -3,10 +3,6 @@
 
 </script>
 
-<svelte:head>
-    <title>Svelte/kit template</title>
-</svelte:head>
-
 <Seo title="" siteName="{import.meta.env.VITE_PUBLIC_SITE_NAME}" />
 
 <main id="main-content">
