@@ -29,7 +29,7 @@
         "cypress-axe": "^0.12.2",
         "cypress-plugin-tab": "^1.0.5",
         "cypress-real-events": "^1.4.0",
-        "eslint": "^7.25.0",
+        "eslint": "^8.0.0",
         "postcss": "^8.2.13",
         "postcss-load-config": "^3.0.1",
         "prettier": "^2.2.1",
