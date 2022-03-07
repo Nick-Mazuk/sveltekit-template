@@ -10,7 +10,7 @@ specifiers:
   '@sveltejs/kit': ^1.0.0-next.107
   autoprefixer: ^10.2.5
   cypress: ^7.2.0
-  cypress-axe: ^0.12.2
+  cypress-axe: ^0.14.0
   cypress-plugin-tab: ^1.0.5
   cypress-real-events: ^1.4.0
   eslint: ^7.25.0
@@ -38,7 +38,7 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.111_svelte@3.38.2
   autoprefixer: 10.2.6_postcss@8.3.0
   cypress: 7.4.0
-  cypress-axe: 0.12.2_cypress@7.4.0
+  cypress-axe: 0.14.0_cypress@7.4.0
   cypress-plugin-tab: 1.0.5
   cypress-real-events: 1.4.0_cypress@7.4.0
   eslint: 7.27.0
@@ -815,6 +815,7 @@ packages:
 
   /@types/yauzl/2.9.1:
     resolution: {integrity: sha512-A1b8SU4D10uoPjwb0lnHmmu8wZhR9d+9o2PKBQT2jU5YPTKsxac6M2qGAdY7VcL+dHHhARVUDmeg0rOrcd9EjA==}
+    requiresBuild: true
     dependencies:
       '@types/node': 14.17.1
     dev: true
@@ -1441,6 +1442,7 @@ packages:
   /colors/1.4.0:
     resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
     engines: {node: '>=0.1.90'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1523,12 +1525,12 @@ packages:
     hasBin: true
     dev: true
 
-  /cypress-axe/0.12.2_cypress@7.4.0:
-    resolution: {integrity: sha512-gn+rVJ2JnvUWhBshbZ/8dkJdANaEB96zgtAEClJ7vNvDgmqAYb+HhQpW0GM04EqtIiPhenqUeKNQDoqrquY5+w==}
+  /cypress-axe/0.14.0_cypress@7.4.0:
+    resolution: {integrity: sha512-7Rdjnko0MjggCmndc1wECAkvQBIhuy+DRtjF7bd5YPZRFvubfMNvrxfqD8PWQmxm7MZE0ffS4Xr43V6ZmvLopg==}
     engines: {node: '>=10'}
     peerDependencies:
       axe-core: ^3 || ^4
-      cypress: ^3 || ^4 || ^5 || ^6
+      cypress: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
     dependencies:
       cypress: 7.4.0
     dev: true
@@ -2426,6 +2428,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
