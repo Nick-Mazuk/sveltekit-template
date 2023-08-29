@@ -25,7 +25,7 @@
         "@nick-mazuk/ui-config": "^0.10.45",
         "@sveltejs/kit": "^1.0.0-next.107",
         "autoprefixer": "^10.2.5",
-        "cypress": "^7.2.0",
+        "cypress": "^13.0.0",
         "cypress-axe": "^0.12.2",
         "cypress-plugin-tab": "^1.0.5",
         "cypress-real-events": "^1.4.0",
